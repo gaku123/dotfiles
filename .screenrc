@@ -14,3 +14,7 @@ bind -c resize ^h eval 'command -c resize' 'resize -h -1'
 bind -c resize ^l eval 'command -c resize' 'resize -h +1'
 bind -c resize ^j eval 'command -c resize' 'resize -v +1'
 bind -c resize ^k eval 'command -c resize' 'resize -v -1'
+
+# caption
+caption always "%{= mw} %-w%{=b cw}%n %t%{-}%+w %= %{=b mw}%y/%m/%d"
+hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-16=%{= .y}[%l]'
