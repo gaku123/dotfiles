@@ -19,6 +19,12 @@ function prompt {
 
 prompt
 
+# prompt for screen
+
+if [ $TERM == 'screen' ]; then
+  PS1=${PS1}'\[\ek\W\e\\\]'
+fi
+
 # User specific aliases and functions
 
 # screen
