@@ -30,6 +30,7 @@ inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 inoremap <silent> <C-h> <C-g>u<C-h>
 inoremap <silent> <C-d> <Del>
+nmap <c-[>  :pop<CR>
 
 set directory=$HOME/.vim/tmp
 set backupdir=$HOME/.vim/tmp
