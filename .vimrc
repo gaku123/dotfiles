@@ -37,6 +37,7 @@ set backupdir=$HOME/.vim/tmp
 
 call plug#begin("$HOME/.vim/plugged")
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 map <C-i> :NERDTreeToggle<CR>
