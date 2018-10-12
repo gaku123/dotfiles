@@ -3,7 +3,7 @@
 [[ "$-" != *i* ]] && return
 
 # see https://github.com/git/git/tree/master/contrib/completion
-source ~/.git-completion.bash 
+source /etc/bash_completion.d/*
 
 # prompt settings
 function parse_git_branch {
@@ -52,4 +52,5 @@ alias ll='ls -l'                              # long list
 alias la='ls -A'                              # all but . and ..
 alias l='ls -CF'                              #
 
-
+# k8s
+alias k='kubectl'
